@@ -2,20 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  overflow-x: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+
+.custom-clip-path {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 75px),
+    calc(100% - 75px) 100%,
+    0 100%
+  );
+}
+
+@media (min-width: 768px) {
+  .custom-clip-path {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - 125px),
+      calc(100% - 125px) 100%,
+      0 100%
+    );
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.image-custom-clip-path {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 50px) 0,
+    100% 50px,
+    100% 100%,
+    50px 100%,
+    0 calc(100% - 50px)
+  );
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2e2e2e;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1a1a1a;
 }
