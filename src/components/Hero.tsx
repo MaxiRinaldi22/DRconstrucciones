@@ -1,16 +1,8 @@
-"use client";
-
 import Image from "next/image";
 import heroImg from "/public/foto.jpeg";
 import Icons from "@/util/Icons";
-import { useEffect } from "react";
-import animation from "@/util/animation";
 
 export default function Hero() {
-  useEffect(() => {
-    animation();
-  }, []);
-
   return (
     <section className="relative bg-[#1F1F1F] pb-10 md:pr-10">
       <Image
@@ -20,9 +12,9 @@ export default function Hero() {
         alt=""
         className="custom-clip-path h-[calc(100vh-40px)] w-screen bg-[#1F1F1F] object-cover"
       />
-      <div className="absolute inset-0 h-[calc(100vh-40px)] md:mr-10 custom-clip-path bg-black opacity-50"></div>
+      <div className="custom-clip-path absolute inset-0 h-[calc(100vh-40px)] bg-black opacity-50 md:mr-10"></div>
 
-      <h1 className="top-animation absolute inset-0 flex flex-col items-center justify-center gap-3 text-white md:items-start md:px-20">
+      <h1 className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-white md:items-start md:px-20">
         <span className="text-3xl font-[400] md:px-1 lg:text-6xl">
           CONSTRUYENDO UN
         </span>
@@ -31,7 +23,7 @@ export default function Hero() {
       </h1>
 
       <div className="absolute inset-0 hidden items-end justify-start px-20 py-20 md:flex">
-        <button className="left-animation group flex h-[60px] w-[300px] items-start justify-between rounded-md bg-[#3476F1] px-5 text-white">
+        <button className="group flex h-[60px] w-[300px] items-start justify-between rounded-md bg-[#3476F1] px-5 text-white">
           <div className="flex h-full flex-col items-start justify-center">
             <p className="font-semibold">MAS</p>
             <p className="font-semibold">INFORMACION</p>
@@ -51,7 +43,7 @@ export default function Hero() {
       </div>
 
       <div className="absolute inset-0 flex items-end justify-start px-5 py-16 md:hidden">
-        <div className="left-animation left-animation flex h-10 w-10 items-center justify-center rounded-md bg-[#3476F1]">
+        <div className="flex h-10 w-10 items-center justify-center rounded-md bg-[#3476F1]">
           <Icons
             path={
               <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>

@@ -1,25 +1,21 @@
-"use client";
 
-import { useEffect } from "react";
+
 import Margin from "./Margin";
-import animation from "@/util/animation";
+
 import Link from "next/link";
 
 export function TrabajosMain() {
-  useEffect(() => {
-    animation();
-  }, []);
 
   return (
     <section className="bg-white py-10">
       <Margin>
         <div className="flex flex-col md:items-start items-center gap-2">
-          <h2 className="left-animation flex flex-col items-center gap-5 text-4xl font-semibold text-[#1F1F1F] md:flex-row md:items-start md:gap-10 md:text-5xl">
+          <h2 className=" flex flex-col items-center gap-5 text-4xl font-semibold text-[#1F1F1F] md:flex-row md:items-start md:gap-10 md:text-5xl">
             <span>N U E S T R O S</span>
             <span>T R A B A J O S</span>
           </h2>
           <Link href="/trabajos">
-            <button className="left-animation flex items-center justify-center gap-5 text-xl md:justify-start">
+            <button className=" flex items-center justify-center gap-5 text-xl md:justify-start">
               <span>VER MAS</span>
               <span>
                 <svg
