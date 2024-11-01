@@ -17,7 +17,7 @@ export function QuienesSomos() {
   return (
     <div className="pb-10">
       <Margin>
-        <section className="h-full border-l-4 border-[#3476F1] px-5 pb-5 pt-20 md:border-l-2 md:p-0">
+        <section className="h-full border-l-4 border-[#3476F1] px-5 pt-20 md:border-l-2 md:p-0 md:px-0">
           <Margin>
             <div className="flex h-[50vh] w-full flex-col items-center justify-center gap-5 md:flex-row">
               <h2
@@ -52,7 +52,7 @@ export function QuienesSomos() {
                 alt="..."
                 width={897}
                 height={547}
-                className="image-custom-clip-path w-[750px] rounded-md"
+                className="image-custom-clip-path w-[750px]"
               />
             </div>
           </Margin>

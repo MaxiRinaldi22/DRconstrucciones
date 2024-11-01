@@ -1,0 +1,1 @@
+Mas grande el favicon
