@@ -1,14 +1,6 @@
-"use client";
-
 import Margin from "@/components/Margin";
-import animation from "@/util/animation";
-import { useEffect } from "react";
 
 export default function Trabajos() {
-  useEffect(() => {
-    animation();
-  }, []);
-
   return (
     <div className="py-[12vh]">
       <Margin>
