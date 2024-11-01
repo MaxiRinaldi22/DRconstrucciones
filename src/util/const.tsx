@@ -20,3 +20,36 @@ export const iconsConst: IconsType[] = [
     href: "https://www.facebook.com/",
   },
 ];
+
+import img from "/public/foto2.jpg";
+
+// IMAGENES
+import divisores from "/public/divisor.jpg";
+import cielo from "/public/cielo.jpg";
+
+export const IMG_HOME_WORK = [
+  {
+    title: "TABIQUES DIVISORIOS", 
+    img: divisores,
+  },
+  {
+    title: "CIELO RASOS",
+    img: cielo,
+  },
+  {
+    title: "REVESTIMIENTO",
+    img: img,
+  },
+  {
+    title: "",
+    img: img,
+  },
+  {
+    title: "",
+    img: img,
+  },
+  {
+    title: "",
+    img: img,
+  },
+];

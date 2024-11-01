@@ -49,7 +49,7 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <hr className="border border-[#3476F1]" />
+        <hr className="border border-[#3476F1] p"/>
         <div className="flex h-full w-full items-center justify-center text-[#474747] md:justify-start">
            © Copyright DR construcciones en steel 2024
         </div>

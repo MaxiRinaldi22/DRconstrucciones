@@ -91,7 +91,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icons path={item.path} width={32}/>
+              <Icons path={item.path} width={32} />
             </Link>
           ))}
         </div>
@@ -102,10 +102,10 @@ export default function Header() {
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="bg-primary-color fixed inset-y-0 right-0 z-10 h-[325px] w-full overflow-y-auto sm:ring-1">
-          <div className="t flex h-[8vh] items-center justify-between p-6">
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 h-44 w-full overflow-y-auto bg-[#1F1F1F] transition-all duration-1000 ease-in-out sm:ring-1">
+          <div className="flex h-[8vh] items-center justify-between px-5 py-10">
             <a href="#">
-              <h1>Logo</h1>
+              <Image src={logo} alt="logo" width={60} height={60} />
             </a>
             <button
               onClick={() => setMobileMenuOpen(false)}
@@ -115,18 +115,31 @@ export default function Header() {
             </button>
           </div>
 
-          <div className="flow-root text-white">
+          <div className="flow-root text-white py-1">
             <div
               onClick={() => setMobileMenuOpen(false)}
-              className="flex h-full flex-col justify-center gap-1 p-4"
+              className="flex h-full justify-center gap-10 px-6"
             >
               <Link href="/">
-                <button>Inicio</button>
+                <button className={`text-xl ${isActive("/") ? "border-b-2" : ""}`}>Inicio</button>
               </Link>
               <Link href="/trabajos">
-                <button>Trabajos</button>
+                <button className={`text-xl ${isActive("/trabajos") ? "border-b-2" : ""}`}>Trabajos</button>
               </Link>
             </div>
+          </div>
+
+          <div className="flex w-full h-[60px] pb-2 items-end justify-center gap-3 ">
+            {iconsConst.map((item, id) => (
+              <Link
+                href={item.href}
+                key={id}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icons path={item.path} width={28} />
+              </Link>
+            ))}
           </div>
         </DialogPanel>
       </Dialog>
