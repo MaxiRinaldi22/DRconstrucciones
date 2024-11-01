@@ -1,8 +1,18 @@
+"use client"
+
 import Image from "next/image";
 import heroImg from "/public/foto.jpeg";
 import Icons from "@/util/Icons";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"
 
 export default function Hero() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    })
+  })
   return (
     <section className="relative bg-[#1F1F1F] pb-10 md:pr-10">
       <Image
@@ -14,7 +24,7 @@ export default function Hero() {
       />
       <div className="custom-clip-path absolute inset-0 h-[calc(100vh-40px)] bg-black opacity-50 md:mr-10"></div>
 
-      <h1 className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-white md:items-start md:px-20">
+      <h1 data-aos="fade-down" className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-white md:items-start md:px-20">
         <span className="text-3xl font-[400] md:px-1 lg:text-6xl">
           CONSTRUYENDO UN
         </span>
@@ -22,7 +32,7 @@ export default function Hero() {
         <span className="text-3xl font-[400] md:px-1 lg:text-6xl">FUTURO</span>
       </h1>
 
-      <div className="absolute inset-0 hidden items-end justify-start px-20 py-20 md:flex">
+      <div data-aos="fade-right" className="absolute inset-0 hidden items-end justify-start px-20 py-20 md:flex">
         <button className="group flex h-[60px] w-[300px] items-start justify-between rounded-md bg-[#3476F1] px-5 text-white">
           <div className="flex h-full flex-col items-start justify-center">
             <p className="font-semibold">MAS</p>
@@ -42,7 +52,7 @@ export default function Hero() {
         </button>
       </div>
 
-      <div className="absolute inset-0 flex items-end justify-start px-5 py-16 md:hidden">
+      <div data-aos="fade-right" className="absolute inset-0 flex items-end justify-start px-5 py-20 md:hidden">
         <div className="flex h-10 w-10 items-center justify-center rounded-md bg-[#3476F1]">
           <Icons
             path={
