@@ -39,17 +39,5 @@ export const IMG_HOME_WORK = [
   {
     title: "REVESTIMIENTO",
     img: img,
-  },
-  {
-    title: "",
-    img: img,
-  },
-  {
-    title: "",
-    img: img,
-  },
-  {
-    title: "",
-    img: img,
-  },
+  }
 ];
