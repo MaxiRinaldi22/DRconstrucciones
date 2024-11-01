@@ -7,9 +7,9 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="h-full md:h-[16vh] w-full bg-[#1F1F1F]">
+    <footer className="h-full w-full bg-[#1F1F1F] md:h-[16vh]">
       <Margin>
-        <div className="flex flex-col py-5 gap-3 md:py-0 md:gap-0 md:flex-row w-full items-center justify-between">
+        <div className="flex w-full flex-col items-center justify-between gap-3 py-5 md:flex-row md:gap-0 md:py-0">
           <div className="flex w-full items-center justify-center">
             <Image
               src={logo}
@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
         </div>
         <hr className="border border-[#3476F1]" />
-        <div className="flex h-full w-full items-center justify-center md:justify-start text-[#474747]">
+        <div className="flex h-full w-full items-center justify-center text-[#474747] md:justify-start">
            © Copyright DR construcciones en steel 2024
         </div>
       </Margin>

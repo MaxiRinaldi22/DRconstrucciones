@@ -13,6 +13,7 @@ export default function Hero() {
       duration: 1200,
     })
   })
+  
   return (
     <section className="relative bg-[#1F1F1F] pb-10 md:pr-10">
       <Image
