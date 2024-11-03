@@ -102,7 +102,7 @@ export default function Header() {
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 h-44 w-full overflow-y-auto bg-[#1F1F1F] transition-all duration-1000 ease-in-out sm:ring-1">
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 h-[220px] w-full overflow-y-auto bg-[#1F1F1F] transition-all duration-1000 ease-in-out sm:ring-1">
           <div className="flex h-[8vh] items-center justify-between px-5 py-10">
             <a href="#">
               <Image src={logo} alt="logo" width={60} height={60} />
@@ -118,18 +118,18 @@ export default function Header() {
           <div className="flow-root text-white py-1">
             <div
               onClick={() => setMobileMenuOpen(false)}
-              className="flex h-full justify-center gap-10 px-6"
+              className="flex h-full flex-col items-start gap-5 px-6"
             >
               <Link href="/">
-                <button className={`text-xl ${isActive("/") ? "border-b-2" : ""}`}>Inicio</button>
+                <button className={`text-lg ${isActive("/") ? "border-b-2" : ""}`}>Inicio</button>
               </Link>
               <Link href="/trabajos">
-                <button className={`text-xl ${isActive("/trabajos") ? "border-b-2" : ""}`}>Trabajos</button>
+                <button className={`text-lg ${isActive("/trabajos") ? "border-b-2" : ""}`}>Trabajos</button>
               </Link>
             </div>
           </div>
 
-          <div className="flex w-full h-[60px] pb-2 items-end justify-center gap-3 ">
+          <div className="flex w-full h-[60px] pb-2 items-center py-2 justify-start px-6 gap-3 ">
             {iconsConst.map((item, id) => (
               <Link
                 href={item.href}
@@ -137,7 +137,7 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Icons path={item.path} width={28} />
+                <Icons path={item.path} width={20} />
               </Link>
             ))}
           </div>

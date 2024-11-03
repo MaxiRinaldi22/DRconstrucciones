@@ -2,10 +2,12 @@
 
 import Image from "next/image";
 import Margin from "./Margin";
-import img2 from "/public/foto2.jpg";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+// IMAGENES
+import steel from "/public/steel.jpeg";
 
 export function QuienesSomos() {
   useEffect(() => {
@@ -19,7 +21,7 @@ export function QuienesSomos() {
       <Margin>
         <section className="h-full border-l-4 border-[#3476F1] px-5 pt-20 md:border-l-2 md:p-0 md:px-0">
           <Margin>
-            <div className="flex md:h-[50vh] w-full flex-col items-center justify-center gap-5 md:flex-row">
+            <div className="flex w-full flex-col items-center justify-center gap-5 md:h-[50vh] md:flex-row">
               <h2
                 data-aos="fade-right"
                 className="flex w-full flex-col items-center gap-5 text-4xl font-semibold text-white md:text-6xl"
@@ -29,7 +31,7 @@ export function QuienesSomos() {
               </h2>
               <p
                 data-aos="fade-left"
-                className="md:w-[90%] text-center text-white md:text-lg"
+                className="text-center text-white md:w-[90%] md:text-lg"
               >
                 Somos un equipo de profesionales en construcción especializada
                 en steel framing y drywall, enfocados en ofrecer soluciones
@@ -50,7 +52,7 @@ export function QuienesSomos() {
               className="flex w-full items-center justify-center pt-10 md:h-[50vh] md:pb-20"
             >
               <Image
-                src={img2}
+                src={steel}
                 alt="..."
                 width={897}
                 height={547}

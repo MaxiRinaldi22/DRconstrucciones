@@ -41,3 +41,35 @@ export const IMG_HOME_WORK = [
     img: img,
   }
 ];
+
+// IMAGENES
+import steel from "/public/steel.jpeg";
+import steelFraming from "/public/steelFront.webp";
+import draywall from "/public/drywall1.webp";
+import draywall2 from "/public/drywall2.webp";
+
+
+
+export const IMG_WORKS = [
+  {
+    img: steel
+  },
+  {
+    img: steelFraming
+  },
+  {
+    img: draywall
+  },
+  {
+    img: draywall2
+  },
+  {
+    img: divisores
+  },
+  {
+    img: img
+  },
+  {
+    img: cielo
+  },
+]

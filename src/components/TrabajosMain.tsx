@@ -68,7 +68,7 @@ export function TrabajosMain() {
           ))}
         </div>
 
-        <div className="hidden grid-cols-3 gap-10 px-5 py-10 md:grid">
+        <div className="hidden grid-cols-3 gap-10 md:py-20 px-5 py-10 md:grid">
           {IMG_HOME_WORK.map((item, id) => (
             <div
               data-aos="fade-up"

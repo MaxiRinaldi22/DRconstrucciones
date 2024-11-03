@@ -6,7 +6,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
 
-import img1 from "/public/foto2.jpg";
+// IMAGES
+import draywall from "/public/drywall1.webp";
+import steelFraming from "/public/steelFront.webp";
+import { IMG_WORKS } from "@/util/const";
 
 export default function Trabajos() {
   useEffect(() => {
@@ -38,7 +41,7 @@ export default function Trabajos() {
         <section className="px-5 md:border-none md:px-0 md:py-20">
           <div className="flex h-full w-full flex-col items-center justify-center py-5 md:flex-row md:justify-between">
             <Image
-              src={img1}
+              src={steelFraming}
               alt="Imagen de un Trabajo"
               className="image-custom-clip-path md:w-[50%]"
               data-aos="fade-right"
@@ -65,7 +68,7 @@ export default function Trabajos() {
           <section className="px-5 md:border-none md:px-0 md:py-20">
             <div className="my-3 flex h-full w-full flex-col items-center justify-center py-5 md:flex-row-reverse md:justify-between">
               <Image
-                src={img1}
+                src={draywall}
                 alt="Imagen de un Trabajo"
                 className="image-custom-clip-path md:w-[50%]"
                 data-aos="fade-left"
@@ -87,6 +90,23 @@ export default function Trabajos() {
           </section>
         </Margin>
       </div>
+
+      <Margin>
+        <h2 data-aos="fade-right" className="flex flex-col items-center gap-5 text-4xl md:pt-10 font-semibold text-[#1F1F1F] md:flex-row md:items-start md:gap-10 md:text-5xl">
+          <span>T R A B A J O S</span>
+          <span>R E A L I Z A D O S</span>
+        </h2>
+        <div data-aos="fade-up" className="md:px0 grid items-center justify-center py-10 gap-2 px-5 md:px-0 md:grid-cols-4">
+          {IMG_WORKS.map((item, id) => (
+            <Image
+              key={id}
+              src={item.img}
+              alt="Imagen de un Trabajo"
+              className="w-full h-full"
+            />
+          ))}
+        </div>
+      </Margin>
     </div>
   );
 }
