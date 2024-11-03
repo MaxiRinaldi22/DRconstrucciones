@@ -26,11 +26,12 @@ export default function Trabajos() {
             T R A B A J O S
           </h1>
           <p className="max-w-6xl text-center text-xl md:text-start">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using Content here, content
-            here, making it look like readable English.
+            En cada proyecto de steel framing y drywall aplicamos técnicas de
+            construcción en seco que optimizan tiempo y recursos sin comprometer
+            la calidad. Trabajamos con precisión en cada estructura, priorizando
+            durabilidad, aislamiento térmico y acústico, y acabados impecables,
+            ideales para satisfacer tanto exigencias residenciales como
+            comerciales e industriales.
           </p>
         </div>
 
@@ -44,14 +45,16 @@ export default function Trabajos() {
             />
             <div
               data-aos="fade-left"
-              className="h-full py-5 text-center md:flex md:w-[50%] md:justify-center px-5 my-3 border-r-2 border-[#3476F1] md:px-10 md:py-[180px]"
+              className="my-3 h-full border-r-2 border-[#3476F1] px-5 py-5 text-center md:flex md:w-[50%] md:justify-center md:px-10 md:py-[180px]"
             >
               <p className="font-[400] md:max-w-lg md:text-xl">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using Content
-                here, content here, making it look like readable English.
+                El steel framing es una de las formas de construcción más
+                eficientes y duraderas. Ofrece estructuras ligeras pero
+                extremadamente resistentes, ideales para proyectos modernos.
+                Además, permite una construcción rápida, con alta precisión,
+                mejor aislamiento térmico y acústico, y un menor impacto
+                ambiental, adaptándose a cualquier tipo de diseño
+                arquitectónico.
               </p>
             </div>
           </div>
@@ -59,8 +62,8 @@ export default function Trabajos() {
       </Margin>
       <div className="bg-[#1F1F1F]">
         <Margin>
-          <section className=" px-5 md:border-none md:px-0 md:py-20">
-            <div className="flex h-full w-full flex-col items-center justify-center py-5 my-3 md:flex-row-reverse md:justify-between">
+          <section className="px-5 md:border-none md:px-0 md:py-20">
+            <div className="my-3 flex h-full w-full flex-col items-center justify-center py-5 md:flex-row-reverse md:justify-between">
               <Image
                 src={img1}
                 alt="Imagen de un Trabajo"
@@ -69,14 +72,15 @@ export default function Trabajos() {
               />
               <div
                 data-aos="fade-right"
-                className="h-full py-5 text-center md:flex md:w-[50%] md:justify-center border-l-2 border-[#3476F1] px-5 md:px-10 md:py-[180px]"
+                className="h-full border-l-2 border-[#3476F1] px-5 py-5 text-center md:flex md:w-[50%] md:justify-center md:px-10 md:py-[180px]"
               >
-                <p className="font-[400] md:max-w-lg md:text-xl text-white">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using Content
-                  here, content here, making it look like readable English.
+                <p className="font-[400] text-white md:max-w-lg md:text-xl">
+                  El drywall es una solución práctica y moderna para crear
+                  espacios interiores de alta calidad. Su instalación rápida y
+                  limpia permite lograr divisiones y acabados versátiles,
+                  ideales para cualquier diseño. Además, ofrece excelentes
+                  propiedades de aislamiento acústico y térmico, siendo perfecto
+                  para transformar espacios de forma eficiente y profesional.
                 </p>
               </div>
             </div>
