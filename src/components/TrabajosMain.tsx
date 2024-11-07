@@ -29,7 +29,7 @@ export function TrabajosMain() {
 
           <button
             data-aos="fade-right"
-            className="transform pl-1 text-xl md:justify-start"
+            className="hidden transform pl-1 text-xl md:block md:justify-start"
           >
             <Link
               href="/trabajos"
@@ -68,11 +68,11 @@ export function TrabajosMain() {
           ))}
         </div>
 
-        <div className="hidden grid-cols-3 gap-10 md:py-20 px-5 py-10 md:grid">
+        <div className="hidden grid-cols-3 gap-10 px-5 py-10 md:grid md:py-20">
           {IMG_HOME_WORK.map((item, id) => (
             <div
               data-aos="fade-up"
-              className="flex flex-col gap-2 items-center justify-center"
+              className="flex flex-col items-center justify-center gap-2"
               key={id}
             >
               <Image
@@ -84,6 +84,28 @@ export function TrabajosMain() {
             </div>
           ))}
         </div>
+        <button
+          data-aos="fade-right"
+          className="flex items-center justify-center w-full transform pl-1 text-xl md:hidden md:justify-start"
+        >
+          <Link
+            href="/trabajos"
+            className="flex items-center gap-2 transition-transform duration-300 will-change-transform hover:scale-105"
+          >
+            <span>VER MAS</span>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width={25}
+                height={25}
+                fill="currentColor"
+              >
+                <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
+              </svg>
+            </span>
+          </Link>
+        </button>
       </Margin>
     </section>
   );
