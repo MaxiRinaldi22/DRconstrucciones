@@ -51,10 +51,10 @@ export default function Header() {
       className={
         mobileMenuOpen
           ? "z-999 absolute left-0 top-0"
-          : `fixed left-0 top-0 z-50 flex h-[8vh] w-full items-center justify-between py-10 text-white transition-all duration-1000 ease-in-out ${isScroll ? "bg-[#1F1F1F] shadow-md shadow-gray-950" : isActive("/trabajos") ? "bg-[#1F1F1F] shadow-md shadow-gray-950" : "bg-transparent"}`
+          : `fixed left-0 top-0 z-50 flex h-[8vh] w-full items-center justify-between py-10 text-white  ${isScroll ? "bg-[#1F1F1F] shadow-md shadow-gray-950" : isActive("/trabajos") ? "bg-[#1F1F1F] shadow-md shadow-gray-950" : "bg-transparent"}`
       }
     >
-      <nav className="mx-auto flex w-full items-center justify-between p-6 lg:px-[80px]">
+      <nav className="mx-auto flex w-full items-center justify-between px-6 lg:px-[80px]">
         <div className="flex lg:flex-1">
           <a href="#">
             <Image src={logo} alt="logo" width={60} height={60} />
@@ -102,8 +102,8 @@ export default function Header() {
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 h-[220px] w-full overflow-y-auto bg-[#1F1F1F] transition-all duration-1000 ease-in-out sm:ring-1">
-          <div className="flex h-[8vh] items-center justify-between px-5 py-10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 h-[220px] w-full overflow-y-auto bg-[#1F1F1F] sm:ring-1">
+          <div className="flex h-[8vh] pt-3  px-6 items-center justify-between ">
             <a href="#">
               <Image src={logo} alt="logo" width={60} height={60} />
             </a>
@@ -115,21 +115,29 @@ export default function Header() {
             </button>
           </div>
 
-          <div className="flow-root text-white py-1">
+          <div className="flow-root py-1 text-white pt-2">
             <div
               onClick={() => setMobileMenuOpen(false)}
-              className="flex h-full flex-col items-start gap-5 px-6"
+              className="flex h-full flex-col items-start gap-5 px-8"
             >
               <Link href="/">
-                <button className={`text-lg ${isActive("/") ? "border-b-2" : ""}`}>Inicio</button>
+                <button
+                  className={`text-lg ${isActive("/") ? "border-b-2" : ""}`}
+                >
+                  Inicio
+                </button>
               </Link>
               <Link href="/trabajos">
-                <button className={`text-lg ${isActive("/trabajos") ? "border-b-2" : ""}`}>Trabajos</button>
+                <button
+                  className={`text-lg ${isActive("/trabajos") ? "border-b-2" : ""}`}
+                >
+                  Trabajos
+                </button>
               </Link>
             </div>
           </div>
 
-          <div className="flex w-full h-[60px] pb-2 items-center py-2 justify-start px-6 gap-3 ">
+          <div className="flex h-[60px] w-full items-center justify-start gap-3 px-8  pb-2">
             {iconsConst.map((item, id) => (
               <Link
                 href={item.href}
@@ -137,7 +145,7 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Icons path={item.path} width={20} />
+                <Icons path={item.path} width={23} />
               </Link>
             ))}
           </div>

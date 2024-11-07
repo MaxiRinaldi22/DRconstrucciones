@@ -29,13 +29,13 @@ export default function Hero() {
 
   const handleScrollPC = () => {
     window.scrollBy({
-      top: 850, 
+      top: 850,
       behavior: "smooth",
     });
   };
   const handleScrollMOBILE = () => {
     window.scrollBy({
-      top: 650, 
+      top: 650,
       behavior: "smooth",
     });
   };
@@ -49,9 +49,9 @@ export default function Hero() {
         quality={75}
         priority
         alt=""
-        className="custom-clip-path h-[calc(100vh-130px)] md:h-[calc(100vh-40px)] w-screen bg-[#1F1F1F] object-cover"
+        className="custom-clip-path h-[calc(100vh-130px)] w-screen bg-[#1F1F1F] object-cover md:h-[calc(100vh-40px)]"
       />
-      <div className="custom-clip-path absolute inset-0 h-[calc(100vh-130px)] md:h-[calc(100vh-40px)] bg-black opacity-50 md:mr-10"></div>
+      <div className="custom-clip-path absolute inset-0 h-[calc(100vh-130px)] bg-black opacity-50 md:mr-10 md:h-[calc(100vh-40px)]"></div>
 
       <h1
         data-aos="fade-down"

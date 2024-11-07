@@ -1,6 +1,5 @@
 Mas grande el favicon
+Cambiar las cosas del footer por ejemplo en numero de wp
 
 
-HIPERVICULOS DEL HERO
 
-Cambiar el ver mas para mobile en la parte de abajo y que en pc arriba

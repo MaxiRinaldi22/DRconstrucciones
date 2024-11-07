@@ -27,8 +27,9 @@ export default function Footer() {
                 }
                 width={25}
               />
-              <p>Pruebas@gmail.com</p>
+              <p className="font-[400]">Pruebas@gmail.com</p>
             </div>
+            
             <div className="flex gap-3">
               <Icons
                 path={
@@ -36,7 +37,7 @@ export default function Footer() {
                 }
                 width={25}
               />
-              <p>(+598) 000 000 000</p>
+              <p className="font-[400]">(+598) 000 000 000</p>
             </div>
           </div>
           <hr className="md:h-[80px] md:border md:border-[#3476F1]" />
