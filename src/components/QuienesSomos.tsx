@@ -54,9 +54,9 @@ export function QuienesSomos() {
               <Image
                 src={steel}
                 alt="..."
-                width={897}
+                width={697}
                 height={547}
-                className="image-custom-clip-path w-[750px]"
+                className="image-custom-clip-path w-[697px]"
               />
             </div>
           </Margin>

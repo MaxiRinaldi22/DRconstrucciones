@@ -3,12 +3,13 @@
 import Image from "next/image";
 import heroImg from "/public/foto.jpeg";
 import Icons from "@/util/Icons";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { gsap } from "gsap";
 
 export default function Hero() {
+  const [scrolPosition, setScrollPosition] = useState(0);
   const buttonRef = useRef(null);
 
   useEffect(() => {
@@ -27,15 +28,30 @@ export default function Hero() {
     });
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(
+        window.pageYOffset || document.documentElement.scrollTop,
+      );
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const handleScrollPC = () => {
     window.scrollBy({
-      top: 850,
+      top: 850 - scrolPosition,
       behavior: "smooth",
     });
   };
+
   const handleScrollMOBILE = () => {
     window.scrollBy({
-      top: 650,
+      top: 650 - scrolPosition,
       behavior: "smooth",
     });
   };
@@ -49,9 +65,9 @@ export default function Hero() {
         quality={75}
         priority
         alt=""
-        className="custom-clip-path h-[calc(100vh-130px)] w-screen bg-[#1F1F1F] object-cover md:h-[calc(100vh-40px)]"
+        className="custom-clip-path h-[calc(100vh-120px)] w-screen bg-[#1F1F1F] object-cover md:h-[calc(100vh-40px)]"
       />
-      <div className="custom-clip-path absolute inset-0 h-[calc(100vh-130px)] bg-black opacity-50 md:mr-10 md:h-[calc(100vh-40px)]"></div>
+      <div className="custom-clip-path absolute inset-0 h-[calc(100vh-120px)] bg-black opacity-50 md:mr-10 md:h-[calc(100vh-40px)]"></div>
 
       <h1
         data-aos="fade-down"
