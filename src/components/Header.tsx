@@ -82,7 +82,7 @@ export default function Header() {
         </div>
 
         <PopoverGroup className="hidden lg:flex lg:flex-col">
-          <div className="flex gap-5 ">
+          <div className="flex gap-5">
             <Link href="/">
               <button className="text-xl font-[400]">Inicio</button>
             </Link>
@@ -90,7 +90,7 @@ export default function Header() {
               <button className="text-xl font-[400]">Trabajos</button>
             </Link>
           </div>
-          <div ref={underlineRef} className="h-0.5  bg-white" />
+          <div ref={underlineRef} className="h-0.5 bg-white" />
         </PopoverGroup>
 
         <div className="hidden gap-2 md:flex md:flex-1 md:justify-end">
@@ -101,7 +101,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icons path={item.path} width={32} />
+              <Icons path={item.path} width={32} color="#ffffff" />
             </Link>
           ))}
         </div>
@@ -155,7 +155,7 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Icons path={item.path} width={23} />
+                <Icons path={item.path} width={23} color="#ffffff" />
               </Link>
             ))}
           </div>
