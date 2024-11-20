@@ -66,9 +66,9 @@ export default function Header() {
     >
       <nav className="mx-auto flex w-full items-center justify-between px-6 lg:px-[80px]">
         <div className="flex lg:flex-1">
-          <a href="#">
-            <Image src={logo} alt="logo" width={60} height={60} />
-          </a>
+      <Link href="/">
+            <Image src={logo} alt="logo" width={115} height={115} />
+          </Link>
         </div>
 
         <div className="flex lg:hidden">
@@ -115,7 +115,7 @@ export default function Header() {
         <DialogPanel className="fixed inset-y-0 right-0 z-10 h-[220px] w-full overflow-y-auto bg-[#1F1F1F] sm:ring-1">
           <div className="flex h-[8vh] items-center justify-between px-6 pt-3">
             <a href="#">
-              <Image src={logo} alt="logo" width={60} height={60} />
+              <Image src={logo} alt="logo" width={115} height={115} />
             </a>
             <button
               onClick={() => setMobileMenuOpen(false)}
@@ -128,7 +128,7 @@ export default function Header() {
           <div className="flow-root py-1 pt-2 text-white">
             <div
               onClick={() => setMobileMenuOpen(false)}
-              className="flex h-full flex-col items-start gap-5 px-8"
+              className="flex h-full flex-col items-start gap-2 pb-1 py-2 px-10"
             >
               <Link href="/">
                 <button
@@ -147,7 +147,7 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="flex h-[60px] w-full items-center justify-start gap-3 px-8 pb-2">
+          <div className="flex h-[60px] w-full items-center justify-start gap-3 px-10 pb-2">
             {iconsConst.map((item, id) => (
               <Link
                 href={item.href}
