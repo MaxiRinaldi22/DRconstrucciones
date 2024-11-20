@@ -48,7 +48,7 @@ export default function Trabajos() {
             />
             <div
               data-aos="fade-left"
-              className="my-3 h-full border-r-2 border-[#3476F1] px-5 py-5 text-center md:flex md:w-[50%] md:justify-center md:px-10 md:py-[180px]"
+              className="my-3 h-full border-r-2 border-[#438CAF] px-5 py-5 text-center md:flex md:w-[50%] md:justify-center md:px-10 md:py-[180px]"
             >
               <p className="font-[400] md:max-w-lg md:text-xl">
                 El steel framing es una de las formas de construcción más
@@ -75,7 +75,7 @@ export default function Trabajos() {
               />
               <div
                 data-aos="fade-right"
-                className="h-full border-l-2 border-[#3476F1] px-5 py-5 text-center md:flex md:w-[50%] md:justify-center md:px-10 md:py-[180px]"
+                className="h-full border-l-2 border-[#438CAF] px-5 py-5 text-center md:flex md:w-[50%] md:justify-center md:px-10 md:py-[180px]"
               >
                 <p className="font-[400] text-white md:max-w-lg md:text-xl">
                   El drywall es una solución práctica y moderna para crear

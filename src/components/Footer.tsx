@@ -28,7 +28,7 @@ export default function Footer() {
             />
           </div>
 
-          <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#3476F1] to-transparent md:h-[90px] md:w-2 md:bg-gradient-to-b"></div>
+          <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#438CAF] to-transparent md:h-[90px] md:w-2 md:bg-gradient-to-b"></div>
 
           <div className="hidden w-full flex-col items-center gap-1 text-xl md:flex">
             <button>
@@ -39,7 +39,7 @@ export default function Footer() {
             </button>
           </div>
 
-          <div className="from-transparent via-[#3476F1] to-transparent md:h-[90px] md:w-2 md:bg-gradient-to-b"></div>
+          <div className="from-transparent via-[#438CAF] to-transparent md:h-[90px] md:w-2 md:bg-gradient-to-b"></div>
 
           <div className="flex w-full flex-col items-center justify-center gap-2 py-5 md:p-0 text-xl">
             <p className="text-xl text-neutral-300">Contactanos</p>
@@ -66,7 +66,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#3476F1] to-transparent md:h-[90px] md:w-2 md:bg-gradient-to-b"></div>
+          <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#438CAF] to-transparent md:h-[90px] md:w-2 md:bg-gradient-to-b"></div>
 
           <div className="flex w-full flex-col items-center py-5 md:p-0 justify-center gap-3">
             <p className="text-xl text-neutral-300">Seguinos en</p>
@@ -80,7 +80,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#3476F1] to-transparent"></div>
+        <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#438CAF] to-transparent"></div>
 
         <div className="py-3 flex h-full w-full items-center justify-center text-center text-[#474747]">
            © 2024 DR construcciones en steel | Todos los derechos reservados.

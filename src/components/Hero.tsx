@@ -85,7 +85,7 @@ export default function Hero() {
         data-aos="fade-right"
         className="absolute inset-0 hidden items-end justify-start px-20 py-20 md:flex"
       >
-        <button className="group flex h-[60px] w-[300px] items-start justify-between rounded-md bg-[#3476F1] px-5 text-white">
+        <button className="group flex h-[60px] w-[300px] items-start justify-between rounded-md bg-[#438CAF] px-5 text-white">
           <div className="flex h-full flex-col items-start justify-center">
             <p className="font-semibold">MAS</p>
             <p className="font-semibold">INFORMACION</p>
@@ -108,7 +108,7 @@ export default function Hero() {
         <div
           onClick={handleScrollMOBILE}
           ref={buttonRef}
-          className="flex h-10 w-10 items-center justify-center rounded-md bg-[#3476F1]"
+          className="flex h-10 w-10 items-center justify-center rounded-md bg-[#438CAF]"
         >
           <Icons
             path={
