@@ -111,7 +111,7 @@ import constru9 from "/public/en-construccion/constru9.jpeg"
 
 export const CASA_EN_CONSTRUCCION: DATA[] = [
   {
-    title: "Calle Marie sophie germain frente al colegio soldador",
+    title: "Calle Marie sophie germain frente al colegio woodside school",
     description: [
       "Casa en construccion...",
     ],
@@ -131,7 +131,7 @@ export const OTROS_SERVICIOS: DATA[] = [
   title: "Otros servicios",
   description: [
     "Cielo raso",
-    "tabiques divisorios",
+    "Tabiques divisorios",
     "revestimiento"
   ],
   images: [
