@@ -41,18 +41,8 @@ export default function Footer() {
 
           <div className="from-transparent via-[#438CAF] to-transparent md:h-[90px] md:w-2 md:bg-gradient-to-b"></div>
 
-          <div className="flex w-full flex-col items-center justify-center gap-2 py-5 md:p-0 text-xl">
+          <div className="flex w-full flex-col items-center justify-center gap-2 py-5 text-xl md:p-0">
             <p className="text-xl text-neutral-300">Contactanos</p>
-            <div className="flex items-center gap-3">
-              <Icons
-                path={
-                  <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path>
-                }
-                width={20}
-                color="#d4d4d4"
-              />
-              <p className="text-base font-[400]">Pruebas@gmail.com</p>
-            </div>
 
             <div className="flex items-center gap-3">
               <Icons
@@ -62,13 +52,13 @@ export default function Footer() {
                 width={20}
                 color="#d4d4d4"
               />
-              <p className="text-base font-[400]">(+598) 000 000 000</p>
+              <p className="text-base font-[400]">(+598) 099 935 209</p>
             </div>
           </div>
 
           <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#438CAF] to-transparent md:h-[90px] md:w-2 md:bg-gradient-to-b"></div>
 
-          <div className="flex w-full flex-col items-center py-5 md:p-0 justify-center gap-3">
+          <div className="flex w-full flex-col items-center justify-center gap-3 py-5 md:p-0">
             <p className="text-xl text-neutral-300">Seguinos en</p>
             <div className="flex items-center gap-3">
               {iconsConst.map((icon) => (
@@ -82,7 +72,7 @@ export default function Footer() {
 
         <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#438CAF] to-transparent"></div>
 
-        <div className="py-3 flex h-full w-full items-center justify-center text-center text-[#474747]">
+        <div className="flex h-full w-full items-center justify-center py-3 text-center text-[#474747]">
            © 2024 DR construcciones en steel | Todos los derechos reservados.
         </div>
       </Margin>

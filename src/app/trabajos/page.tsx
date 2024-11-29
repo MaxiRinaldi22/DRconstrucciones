@@ -7,9 +7,15 @@ import "aos/dist/aos.css";
 import Image from "next/image";
 
 // IMAGES
-import draywall from "/public/drywall1.webp";
-import steelFraming from "/public/steelFront.webp";
-import { IMG_WORKS } from "@/util/const";
+import draywall from "/public/en-construccion/constru9.jpeg";
+import steelFraming from "/public/en-construccion/constru2.jpeg";
+import {
+  CASA_EN_CONSTRUCCION,
+  LA_SONRISA,
+  OCEAN_PARK,
+  OTROS_SERVICIOS,
+} from "@/util/const";
+import { Casa } from "@/components/Casa";
 
 export default function Trabajos() {
   useEffect(() => {
@@ -92,20 +98,25 @@ export default function Trabajos() {
       </div>
 
       <Margin>
-        <h2 data-aos="fade-right" className="flex flex-col items-center gap-5 text-4xl md:pt-10 font-semibold text-[#1F1F1F] md:flex-row md:items-start md:gap-10 md:text-5xl">
+        <h2
+          data-aos="fade-right"
+          className="flex flex-col items-start gap-5 px-5 text-4xl font-semibold text-[#1F1F1F] md:flex-row md:items-start md:gap-10 md:px-0 md:pt-10 md:text-5xl"
+        >
           <span>T R A B A J O S</span>
-          <span>R E A L I Z A D O S</span>
+          <span className="pl-4 md:pl-0">R E A L I Z A D O S</span>
         </h2>
-        <div data-aos="fade-up" className="md:px0 grid items-center justify-center py-10 gap-2 px-5 md:px-0 md:grid-cols-4">
-          {IMG_WORKS.map((item, id) => (
-            <Image
-              key={id}
-              src={item.img}
-              alt="Imagen de un Trabajo"
-              className="w-full h-full"
-            />
-          ))}
+        <div className="flex flex-col gap-12">
+
+        <Casa infoCasa={OCEAN_PARK[0]} />
+        <Casa infoCasa={LA_SONRISA[0]} />
+        <Casa infoCasa={CASA_EN_CONSTRUCCION[0]} />
+        <Casa infoCasa={OTROS_SERVICIOS[0]} />
+
         </div>
+        <h3 className="flex flex-col items-center text-center gap-2 justify-center w-full mt-20 text-2xl font-semibold text-[#1F1F1F] 0">
+          <span >Por cualquier consulta no dudes en contactarnos</span>
+          <span className="font-[400]">(+598) 099 935 209</span>
+        </h3>
       </Margin>
     </div>
   );

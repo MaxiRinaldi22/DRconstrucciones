@@ -7,7 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // IMAGENES
-import steel from "/public/steel.jpeg";
+import logo from "/public/logoW.png";
 
 export function QuienesSomos() {
   useEffect(() => {
@@ -52,11 +52,11 @@ export function QuienesSomos() {
               className="flex w-full items-center justify-center pt-10 md:h-[50vh] md:pb-20"
             >
               <Image
-                src={steel}
+                src={logo}
                 alt="..."
-                width={697}
-                height={547}
-                className="image-custom-clip-path w-[697px]"
+                width={400}
+                height={400}
+                className="w-[400px] md:w-[450px]"
               />
             </div>
           </Margin>

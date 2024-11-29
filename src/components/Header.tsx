@@ -66,7 +66,7 @@ export default function Header() {
     >
       <nav className="mx-auto flex w-full items-center justify-between px-6 lg:px-[80px]">
         <div className="flex lg:flex-1">
-      <Link href="/">
+          <Link href="/">
             <Image src={logo} alt="logo" width={115} height={115} />
           </Link>
         </div>
@@ -112,8 +112,8 @@ export default function Header() {
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 h-[220px] w-full overflow-y-auto bg-[#1F1F1F] sm:ring-1">
-          <div className="flex h-[8vh] items-center justify-between px-6 pt-3">
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 h-[220px] w-full bg-[#1F1F1F] sm:ring-1">
+          <div className="flex h-[8vh] items-center justify-between px-6 pt-6">
             <a href="#">
               <Image src={logo} alt="logo" width={115} height={115} />
             </a>
@@ -128,7 +128,7 @@ export default function Header() {
           <div className="flow-root py-1 pt-2 text-white">
             <div
               onClick={() => setMobileMenuOpen(false)}
-              className="flex h-full flex-col items-start gap-2 pb-1 py-2 px-10"
+              className="flex h-full flex-col items-start gap-2 px-10 py-3 pb-1"
             >
               <Link href="/">
                 <button

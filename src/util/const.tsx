@@ -1,4 +1,4 @@
-import { IconsType } from "./types";
+import { DATA, IconsType } from "./types";
 
 export const iconsConst: IconsType[] = [
   {
@@ -21,15 +21,19 @@ export const iconsConst: IconsType[] = [
   },
 ];
 
-import img from "/public/foto2.jpg";
-
 // IMAGENES
 import divisores from "/public/divisor.jpg";
-import cielo from "/public/cielo.jpg";
+import cielo from "/public/cielo.jpeg";
+import revestimiento from "/public/revestimiento.jpeg";
+import steel from "/public/steel.jpeg";
 
 export const IMG_HOME_WORK = [
   {
-    title: "TABIQUES DIVISORIOS", 
+    title: "CASAS 100% STEEL",
+    img: steel,
+  },
+  {
+    title: "TABIQUES DIVISORIOS",
     img: divisores,
   },
   {
@@ -38,38 +42,100 @@ export const IMG_HOME_WORK = [
   },
   {
     title: "REVESTIMIENTO",
-    img: img,
-  }
+    img: revestimiento,
+  },
 ];
 
-// IMAGENES
-import steel from "/public/steel.jpeg";
-import steelFraming from "/public/steelFront.webp";
-import draywall from "/public/drywall1.webp";
-import draywall2 from "/public/drywall2.webp";
+// OCEAN PARK IMAGENES
+import ocean1 from "/public/ocean-park/ocean1.jpeg";
+import ocean2 from "/public/ocean-park/ocean2.jpeg";
+import ocean3 from "/public/ocean-park/ocean3.jpeg";
+import ocean4 from "/public/ocean-park/ocean4.jpeg";
+import ocean5 from "/public/ocean-park/ocean5.jpeg";
+import ocean6 from "/public/ocean-park/ocean6.jpeg";
+import ocean7 from "/public/ocean-park/ocean7.jpeg";
+import ocean8 from "/public/ocean-park/ocean8.jpeg";
+import ocean9 from "/public/ocean-park/ocean9.jpeg";
+import ocean10 from "/public/ocean-park/ocean10.jpeg";
 
+export const OCEAN_PARK: DATA[] = [
+  {
+    title: "Casa en ocean park",
+    description: [
+      "Casa 100% steel",
+      "Cubierta de steel con chapa ondulada",
+      "Sistema eifs (alta eficiencia térmica",
+      "Aberturas de pvc doble vidrio",
+    ],
+    images: [ocean1, ocean2, ocean3, ocean4, ocean5, ocean6, ocean7, ocean8, ocean9, ocean10],
+  },
+];
 
+// LA SONRISA IMAGENES
+import sonrisa1 from "/public/la-sonrisa/sonrisa1.jpeg"
+import sonrisa2 from "/public/la-sonrisa/sonrisa2.jpeg"
+import sonrisa3 from "/public/la-sonrisa/sonrisa3.jpeg"
+import sonrisa4 from "/public/la-sonrisa/sonrisa4.jpeg"
+import sonrisa5 from "/public/la-sonrisa/sonrisa5.jpeg"
+import sonrisa6 from "/public/la-sonrisa/sonrisa6.jpeg"
+import sonrisa7 from "/public/la-sonrisa/sonrisa7.jpeg"
+import sonrisa8 from "/public/la-sonrisa/sonrisa8.jpeg"
+import sonrisa9 from "/public/la-sonrisa/sonrisa9.jpeg"
+import sonrisa10 from "/public/la-sonrisa/sonrisa10.jpeg"
 
-export const IMG_WORKS = [
+export const LA_SONRISA: DATA[] = [
   {
-    img: steel
-  },
+    title: "Casa en barrio la sonrisa",
+    description: [
+      "Casa 100% en steel",
+      "Cubierta de steel y chapa acanalada",
+      "Sistema siding machiembrado  ",
+      "Aberturas en pvc doble vidrio"
+    ],
+    images: [
+      sonrisa1, sonrisa2, sonrisa3, sonrisa4, sonrisa5, sonrisa6, sonrisa7, sonrisa8, sonrisa9, sonrisa10
+    ]
+  }
+]
+
+// CASA EN CONSTRUCCION IMAGENES
+import constru1 from "/public/en-construccion/constru1.jpeg"
+import constru2 from "/public/en-construccion/constru2.jpeg"
+import constru3 from "/public/en-construccion/constru3.jpeg"
+import constru4 from "/public/en-construccion/constru4.jpeg"
+import constru5 from "/public/en-construccion/constru5.jpeg"
+import constru6 from "/public/en-construccion/constru6.jpeg"
+import constru7 from "/public/en-construccion/constru7.jpeg"
+import constru8 from "/public/en-construccion/constru8.jpeg"
+import constru9 from "/public/en-construccion/constru9.jpeg"
+
+export const CASA_EN_CONSTRUCCION: DATA[] = [
   {
-    img: steelFraming
-  },
-  {
-    img: draywall
-  },
-  {
-    img: draywall2
-  },
-  {
-    img: divisores
-  },
-  {
-    img: img
-  },
-  {
-    img: cielo
-  },
+    title: "Calle Marie sophie germain frente al colegio soldador",
+    description: [
+      "Casa en construccion...",
+    ],
+    images: [
+      constru1, constru2, constru3, constru4, constru5, constru6, constru7, constru8, constru9
+    ]
+  }
+]
+
+import otros1 from "/public/otros/otros1.jpeg"
+import otros2 from "/public/otros/otros2.png"
+import otros3 from "/public/otros/otros3.jpeg"
+import otros4 from "/public/otros/otros4.jpeg"
+
+export const OTROS_SERVICIOS: DATA[] = [
+{
+  title: "Otros servicios",
+  description: [
+    "Cielo raso",
+    "tabiques divisorios",
+    "revestimiento"
+  ],
+  images: [
+    otros1, otros2, otros3, otros4, revestimiento
+  ]
+}
 ]

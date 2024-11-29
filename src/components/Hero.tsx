@@ -1,12 +1,13 @@
 "use client";
 
-import Image from "next/image";
-import heroImg from "/public/foto.jpeg";
-import Icons from "@/util/Icons";
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
+import Icons from "@/util/Icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { gsap } from "gsap";
+
+import heroImg from "/public/hero.png";
 
 export default function Hero() {
   const [scrolPosition, setScrollPosition] = useState(0);

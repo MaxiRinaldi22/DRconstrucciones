@@ -2,13 +2,16 @@
 
 import { useEffect } from "react";
 import Margin from "./Margin";
-import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { IMG_HOME_WORK } from "@/util/const";
 import Image from "next/image";
+import { VerMasBtn } from "./ui/VerMasBtn";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 export function TrabajosMain() {
+  const mobile = useIsMobile();
+
   useEffect(() => {
     AOS.init({
       duration: 1200,
@@ -22,33 +25,14 @@ export function TrabajosMain() {
           data-aos="fade-right"
           className="flex flex-col items-center gap-2 md:items-start"
         >
-          <h2 className="flex flex-col items-center gap-5 text-4xl font-semibold text-[#1F1F1F] md:flex-row md:items-start md:gap-10 md:text-5xl">
-            <span>N U E S T R O S</span>
-            <span>T R A B A J O S</span>
-          </h2>
 
-          <button
+          <h2
             data-aos="fade-right"
-            className="hidden transform pl-1 text-xl md:block md:justify-start"
+            className="flex w-full flex-col items-start gap-5 px-5 pt-10 text-4xl font-[700] text-[#1F1F1F] md:flex-row md:gap-10 md:px-0 md:text-5xl"
           >
-            <Link
-              href="/trabajos"
-              className="flex items-center gap-2 transition-transform duration-300 will-change-transform hover:scale-105"
-            >
-              <span>VER MAS</span>
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width={25}
-                  height={25}
-                  fill="currentColor"
-                >
-                  <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
-                </svg>
-              </span>
-            </Link>
-          </button>
+            S E R V I C I O S
+          </h2>
+          <VerMasBtn hide={mobile ? true : false} />
         </div>
 
         <div className="grid grid-cols-1 gap-10 px-5 py-10 md:hidden">
@@ -68,7 +52,7 @@ export function TrabajosMain() {
           ))}
         </div>
 
-        <div className="hidden grid-cols-3 gap-10 px-5 py-10 md:grid md:py-20">
+        <div className="hidden grid-cols-4 gap-10 px-5 py-10 md:grid md:py-20">
           {IMG_HOME_WORK.map((item, id) => (
             <div
               data-aos="fade-up"
@@ -84,28 +68,10 @@ export function TrabajosMain() {
             </div>
           ))}
         </div>
-        <button
-          data-aos="fade-right"
-          className="flex items-center justify-center w-full transform pl-1 text-xl md:hidden md:justify-start"
-        >
-          <Link
-            href="/trabajos"
-            className="flex items-center gap-2 transition-transform duration-300 will-change-transform hover:scale-105"
-          >
-            <span>VER MAS</span>
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width={25}
-                height={25}
-                fill="currentColor"
-              >
-                <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
-              </svg>
-            </span>
-          </Link>
-        </button>
+
+        <div className="flex w-full items-center justify-center">
+          <VerMasBtn hide={mobile ? false : true} />
+        </div>
       </Margin>
     </section>
   );

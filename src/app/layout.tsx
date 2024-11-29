@@ -4,7 +4,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "DR Construcciones en Seco",
+  title: "DR Construcciones en Steel",
   description:
     "Especialistas en construcciones en seco con steel framing y drywall. Ofrecemos rapidez, calidad y soluciones personalizadas para proyectos residenciales, comerciales e industriales.",
 };
