@@ -19,7 +19,7 @@ export function TrabajosMain() {
   });
 
   return (
-    <section className="bg-white py-10">
+    <section className="bg-white py-28">
       <Margin>
         <div
           data-aos="fade-right"
