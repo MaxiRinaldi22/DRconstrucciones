@@ -73,7 +73,7 @@ export default function Footer() {
         <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-[#438CAF] to-transparent"></div>
 
         <div className="flex h-full w-full items-center justify-center py-3 text-center text-[#474747]">
-           © 2024 DR construcciones en steel | Todos los derechos reservados.
+           © {new Date().getFullYear()} DR construcciones en steel | Todos los derechos reservados.
         </div>
       </Margin>
     </footer>
