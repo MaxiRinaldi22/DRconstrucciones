@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import { Header } from "@/components/Header";
 import { monda } from "../util/fonts";
 import "./globals.css";
 import Footer from "@/components/Footer";
