@@ -17,24 +17,24 @@ export function QuienesSomos() {
   });
 
   return (
-    <div className="pb-10">
+    <div className="bg-primary pb-10">
       <Margin>
-        <section className="h-full border-l-4 border-[#438CAF] px-5 pt-20 md:border-l-2 md:p-0 md:px-0">
+        <section className="border-secondary h-full border-l-4 px-5 pb-10 pt-20 md:border-l-2 md:p-0">
           <Margin>
             <div className="flex w-full flex-col items-center justify-center gap-5 md:h-[50vh] md:flex-row">
               <h2
                 data-aos="fade-right"
-                className="flex w-full flex-col items-center gap-5 text-4xl font-semibold text-white md:text-6xl"
+                className="flex w-full flex-col gap-5 text-4xl font-medium tracking-widest text-white md:items-center md:text-6xl"
               >
-                <span>Q U I E N E S</span>
-                <span>S O M O S</span>
+                <span>QUIENES</span>
+                <span>SOMOS</span>
               </h2>
               <p
                 data-aos="fade-left"
-                className="text-center text-white md:w-[90%] md:text-lg"
+                className="text-start font-normal text-white md:w-[90%] md:text-center md:text-lg"
               >
                 Somos un equipo de profesionales en construcción especializada
-                en steel framing y drywall, enfocados en ofrecer soluciones
+                en STEEL FRAMING y DRYWALL, enfocados en ofrecer soluciones
                 modernas, eficientes y sostenibles. Con años de experiencia en
                 el sector, transformamos ideas en estructuras sólidas y
                 funcionales, adaptándonos a las necesidades de cada cliente. Nos

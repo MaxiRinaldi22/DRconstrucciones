@@ -7,7 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { gsap } from "gsap";
 
-import heroImg from "/public/hero.png";
+import heroImg from "/public/hero.webp";
 
 export default function Hero() {
   const [scrolPosition, setScrollPosition] = useState(0);
@@ -58,7 +58,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative bg-[#1F1F1F] pb-10 md:pr-10">
+    <section className="bg-primary relative pb-10 md:pr-10">
       <Image
         width={1920}
         height={1080}
@@ -66,19 +66,24 @@ export default function Hero() {
         quality={75}
         priority
         alt=""
-        className="custom-clip-path h-[calc(100vh-120px)] w-screen bg-[#1F1F1F] object-cover md:h-[calc(100vh-40px)]"
+        className="custom-clip-path h-[calc(100vh-120px)] w-screen bg-black object-cover md:h-[calc(100vh-40px)]"
       />
-      <div className="custom-clip-path absolute inset-0 h-[calc(100vh-120px)] bg-black opacity-50 md:mr-10 md:h-[calc(100vh-40px)]"></div>
+      <div className="custom-clip-path absolute inset-0 h-[calc(100vh-120px)] bg-black opacity-60 md:mr-10 md:h-[calc(100vh-40px)]"></div>
 
       <h1
         data-aos="fade-down"
         className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-white md:items-start md:px-20"
       >
         <span className="text-3xl font-[400] md:px-1 lg:text-6xl">
-          CONSTRUYENDO UN
+          Construccion en seco:
         </span>
-        <span className="text-5xl font-semibold lg:text-8xl">M E J O R</span>
-        <span className="text-3xl font-[400] md:px-1 lg:text-6xl">FUTURO</span>
+        <span className="block text-center text-4xl font-semibold tracking-wider md:hidden">
+          MODERNIDAD <br /> Y <br /> SOLIDEZ
+        </span>
+        <span className="hidden text-start text-7xl font-semibold tracking-wider md:block">
+          <span className="block">MODERNIDAD</span>
+          <span className="mt-4 block">Y SOLIDEZ</span>
+        </span>
       </h1>
 
       <div
@@ -86,7 +91,7 @@ export default function Hero() {
         data-aos="fade-right"
         className="absolute inset-0 hidden items-end justify-start px-20 py-20 md:flex"
       >
-        <button className="group flex h-[60px] w-[300px] items-start justify-between rounded-md bg-[#438CAF] px-5 text-white">
+        <button className="bg-secondary group flex h-[60px] w-[300px] items-start justify-between rounded-md px-5 text-white">
           <div className="flex h-full flex-col items-start justify-center">
             <p className="font-semibold">MAS</p>
             <p className="font-semibold">INFORMACION</p>

@@ -1,52 +1,107 @@
-import { INFO_CASAS } from "@/util/types";
-import { CarruselComponent } from "./ui/Carrusel";
-import Image from "next/image";
+"use client";
+
 import { useEffect } from "react";
+import Image from "next/image";
 import Aos from "aos";
+import "aos/dist/aos.css";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
+import { StaticImageData } from "next/image";
 
-export function Casa({ infoCasa }: INFO_CASAS) {
+// Define proper TypeScript interface
+export interface CasaInfo {
+  title: string;
+  description: string[];
+  images: StaticImageData[];
+  location?: string;
+}
 
+interface CasaProps {
+  infoCasa: CasaInfo;
+  className?: string;
+}
+
+export function Casa({ infoCasa, className }: CasaProps) {
   useEffect(() => {
     Aos.init({
-      duration: 1200
-    })
-  }, [])
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
 
   return (
-    <section className="flex w-full flex-col gap-3">
-      <div data-aos="fade-right" className="flex flex-col gap-5 px-5 md:px-0">
-        <h3 className="mt-8 text-2xl font-[500] tracking-wider md:text-4xl">
+    <section className={cn("w-full space-y-8 py-4 md:py-8", className)}>
+      <div data-aos="fade-up" className="flex flex-col gap-3 px-5 md:px-0">
+        {infoCasa.location && (
+          <Badge
+            variant="outline"
+            className="border-secondary w-fit border-2 text-sm text-[#1f1f1f]"
+          >
+            {infoCasa.location}
+          </Badge>
+        )}
+
+        <h2 className="text-2xl font-normal tracking-tight md:text-4xl">
           {infoCasa.title}
-        </h3>
-        <ul className="flex w-full flex-col items-start justify-start gap-3">
+        </h2>
+
+        <ul className="space-y-4">
           {infoCasa.description.map((item, index) => (
-            <li key={index} className="flex w-full items-center gap-2">
-              <div className="relative flex items-center">
-                <div
-                  className="mt-[0.125rem] h-2 flex items-center w-2 rounded-full bg-[#438CAF]"
-                  style={{
-                    alignSelf: "center",
-                  }}
-                ></div>
-              </div>
-              <p className="md:text-xl">{item}</p>
+            <li key={index} className="flex items-center gap-3">
+              <div className="bg-secondary h-2.5 w-2.5 flex-shrink-0 rounded-full" />
+              <p className="text-base text-[#4a4a4a] md:text-lg">{item}</p>
             </li>
           ))}
         </ul>
       </div>
-      <div className="block md:hidden">
-        <CarruselComponent images={infoCasa.images} />
+
+      {/* Mobile Carousel */}
+      <div data-aos="fade-up" data-aos-delay="200" className="px-5 md:hidden">
+        <Carousel className="w-full">
+          <CarouselContent>
+            {infoCasa.images.map((img, i) => (
+              <CarouselItem key={i}>
+                <div className="overflow-hidden rounded-lg">
+                  <Image
+                    src={img || "/placeholder.svg"}
+                    alt={`${infoCasa.title} - Image ${i + 1}`}
+                    width={800}
+                    height={500}
+                    className="h-[300px] w-full object-cover"
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-2" />
+          <CarouselNext className="right-2" />
+        </Carousel>
       </div>
 
-      <div className="mt-10 hidden grid-cols-3 gap-6 md:grid">
+      {/* Desktop Grid Gallery */}
+      <div
+        data-aos="fade-up"
+        data-aos-delay="300"
+        className="hidden grid-cols-2 gap-4 md:grid lg:grid-cols-3 lg:gap-6"
+      >
         {infoCasa.images.slice(0, 9).map((img, i) => (
-          <Image
-            src={img}
-            alt={infoCasa.title}
-            key={i}
-            height={400}
-            className="h-[400px] w-full object-cover little-custom-clip-path"
-          />
+          <div key={i} className="group overflow-hidden">
+            <Image
+              src={img || "/placeholder.svg"}
+              alt={`${infoCasa.title} - Image ${i + 1}`}
+              width={800}
+              height={600}
+              className="little-custom-clip-path h-[350px] w-full object-cover"
+            />
+          </div>
         ))}
       </div>
     </section>

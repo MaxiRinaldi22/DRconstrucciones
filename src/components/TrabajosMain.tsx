@@ -25,17 +25,16 @@ export function TrabajosMain() {
           data-aos="fade-right"
           className="flex flex-col items-center gap-2 md:items-start"
         >
-
           <h2
             data-aos="fade-right"
-            className="flex w-full flex-col items-start gap-5 px-5 pt-10 text-4xl font-[700] text-[#1F1F1F] md:flex-row md:gap-10 md:px-0 md:text-5xl"
+            className="flex w-full flex-col items-center gap-5 px-5 pt-10 text-4xl font-medium tracking-widest text-[#1F1F1F] md:flex-row md:gap-10 md:px-0 md:text-5xl"
           >
-            S E R V I C I O S
+            SERVICIOS
           </h2>
           <VerMasBtn hide={mobile ? true : false} />
         </div>
 
-        <div className="grid grid-cols-1 gap-10 px-5 py-10 md:hidden">
+        <div className="grid grid-cols-1 gap-10 px-5 py-10 md:hidden md:px-0">
           {IMG_HOME_WORK.map((item, id) => (
             <div
               data-aos={id % 2 === 0 ? "fade-right" : "fade-left"}
@@ -45,14 +44,14 @@ export function TrabajosMain() {
               <Image
                 src={item.img}
                 alt="Imagenes de trabajos realizados"
-                className="image-custom-clip-path h-[300px] w-[400px] object-cover"
+                className="little-custom-clip-path h-[300px] w-[400px] object-cover"
               />
-              <p className="font-semibold">{item.title}</p>
+              <p className="pt-2 text-xl font-medium">{item.title}</p>
             </div>
           ))}
         </div>
 
-        <div className="hidden grid-cols-4 gap-10 px-5 py-10 md:grid md:py-20">
+        <div className="hidden grid-cols-4 gap-10 px-5 py-10 md:grid md:px-0 md:py-20">
           {IMG_HOME_WORK.map((item, id) => (
             <div
               data-aos="fade-up"
@@ -64,7 +63,7 @@ export function TrabajosMain() {
                 alt="Imagenes de trabajos realizados"
                 className="image-custom-clip-path h-[300px] w-[400px] object-cover"
               />
-              <p className="font-semibold">{item.title}</p>
+              <p className="text-2xl font-normal">{item.title}</p>
             </div>
           ))}
         </div>
