@@ -7,13 +7,14 @@ import "aos/dist/aos.css";
 import Image from "next/image";
 
 // IMAGES
-import draywall from "/public/en-construccion/constru9.jpeg";
-import steelFraming from "/public/en-construccion/constru2.jpeg";
+import draywall from "/public/jardines/drywall.jpeg";
+import steelFraming from "/public/jardines/constru2.jpeg";
 import {
-  CASA_EN_CONSTRUCCION,
+  CASA_JARDINES,
   LA_SONRISA,
   OCEAN_PARK,
   OTROS_SERVICIOS,
+  NUEVO_PROYECTO,
 } from "@/util/const";
 import { Casa } from "@/components/Casa";
 
@@ -109,7 +110,8 @@ export default function Trabajos() {
         <div className="flex flex-col gap-2 md:gap-3">
           <Casa infoCasa={OCEAN_PARK[0]} />
           <Casa infoCasa={LA_SONRISA[0]} />
-          <Casa infoCasa={CASA_EN_CONSTRUCCION[0]} />
+          <Casa infoCasa={CASA_JARDINES[0]} />
+          <Casa infoCasa={NUEVO_PROYECTO[0]} />
           <Casa infoCasa={OTROS_SERVICIOS[0]} />
         </div>
         <h3 className="0 mt-20 flex w-full flex-col items-center justify-center gap-2 text-center text-2xl font-semibold text-[#1F1F1F]">

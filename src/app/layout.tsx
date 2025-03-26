@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { monda } from "../util/fonts";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: "DR Construcciones en Steel",
@@ -20,6 +21,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

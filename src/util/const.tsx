@@ -98,32 +98,54 @@ export const LA_SONRISA: CasaInfo[] = [
   },
 ];
 
-// CASA EN CONSTRUCCION IMAGENES
-import constru1 from "/public/en-construccion/constru1.jpeg";
-import constru2 from "/public/en-construccion/constru2.jpeg";
-import constru3 from "/public/en-construccion/constru3.jpeg";
-import constru4 from "/public/en-construccion/constru4.jpeg";
-import constru5 from "/public/en-construccion/constru5.jpeg";
-import constru6 from "/public/en-construccion/constru6.jpeg";
-import constru7 from "/public/en-construccion/constru7.jpeg";
-import constru8 from "/public/en-construccion/constru8.jpeg";
-import constru9 from "/public/en-construccion/constru9.jpeg";
+// CASA EN JARDINES DE COORDOBA
+import constru0 from "/public/jardines/constru0.jpeg";
+import constru1 from "/public/jardines/constru1.jpeg";
+import constru2 from "/public/jardines/constru2.jpeg";
+import constru3 from "/public/jardines/constru3.jpeg";
+import constru4 from "/public/jardines/constru4.jpeg";
+import constru5 from "/public/jardines/constru5.jpeg";
+import constru6 from "/public/jardines/constru6.jpeg";
+import constru7 from "/public/jardines/constru7.jpeg";
+import constru8 from "/public/jardines/constru8.jpeg";
+import constru9 from "/public/jardines/constru9.jpeg";
+import constru10 from "/public/jardines/constru10.jpeg";
 
-export const CASA_EN_CONSTRUCCION: DATA[] = [
+export const CASA_JARDINES: CasaInfo[] = [
   {
-    title: "Calle Marie sophie germain frente al colegio woodside school",
-    description: ["Casa en construccion..."],
+    location: "Jardines de cordoba",
+    title: "Casa 100% en STEEL",
+    description: [
+      "Muros 100% steel",
+      "Cubierta isopanel 15cm",
+      "Sistema eifs con basecoat (alta eficiencia térmica)",
+      "Aberturas pvc doble vidrio",
+    ],
     images: [
+      constru0,
+      constru7,
       constru1,
       constru2,
       constru3,
       constru4,
       constru5,
       constru6,
-      constru7,
       constru8,
       constru9,
+      constru10,
     ],
+  },
+];
+
+import punta1 from "/public/punta/punta1.jpeg";
+import punta2 from "/public/punta/punta2.jpeg";
+
+export const NUEVO_PROYECTO: CasaInfo[] = [
+  {
+    location: "Punta ballena",
+    title: "Nuevo proyecto confirmado",
+    description: ["Proximamente..."],
+    images: [punta1, punta2],
   },
 ];
 
