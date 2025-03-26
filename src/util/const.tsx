@@ -110,6 +110,8 @@ import constru7 from "/public/jardines/constru7.jpeg";
 import constru8 from "/public/jardines/constru8.jpeg";
 import constru9 from "/public/jardines/constru9.jpeg";
 import constru10 from "/public/jardines/constru10.jpeg";
+import constru11 from "/public/jardines/constru11.jpeg";
+import constru12 from "/public/jardines/constru12.jpeg";
 
 export const CASA_JARDINES: CasaInfo[] = [
   {
@@ -132,6 +134,8 @@ export const CASA_JARDINES: CasaInfo[] = [
       constru6,
       constru8,
       constru9,
+      constru11,
+      constru12,
       constru10,
     ],
   },

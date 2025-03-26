@@ -92,7 +92,7 @@ export function Casa({ infoCasa, className }: CasaProps) {
         data-aos-delay="300"
         className="hidden grid-cols-2 gap-4 md:grid lg:grid-cols-3 lg:gap-6"
       >
-        {infoCasa.images.slice(0, 9).map((img, i) => (
+        {infoCasa.images.map((img, i) => (
           <div key={i} className="group overflow-hidden">
             <Image
               src={img || "/placeholder.svg"}
